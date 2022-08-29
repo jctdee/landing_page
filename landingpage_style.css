@@ -1,0 +1,167 @@
+* {
+  --min-height: 30px;
+  --bgcolor: #eee;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+.header {
+  position: fixed;
+  top: 0vw;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  min-width: 18.75rem;
+  min-height: var(--min-height);
+  background: var(--bgcolor);
+}
+
+.header-img {
+  margin-top: 2vw;
+  max-width: 18.75rem;
+}
+
+.nav-bar {
+  margin-top: 2vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header-nav-link {
+  font-size: 1.2rem;
+}
+
+body {
+  background: var(--bgcolor);
+}
+
+.started-container {
+  margin: calc(var(--min-height) * 3) auto;
+  /* width: 50%; */
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.email-container input {
+  min-width: 15.625rem;
+  min-height: 1.5625rem;
+}
+
+.button-container {
+  margin-top: 0.625rem;
+}
+
+.started-button {
+  background: #f5c71a;
+  border: none;
+  padding: 0.625rem;
+  font-weight: 800;
+}
+
+.product-features ul {
+  list-style: none;
+}
+
+.product-features li {
+  margin-bottom: 3.125rem;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-gap: 20px;
+  
+}
+
+.icon-list {
+  color: #ff8c00;
+  margin-left: auto;
+  margin-right: 20%;
+} 
+
+.description {
+  margin-top: -1.25rem;
+  margin-right: 10%;
+}
+
+.feature-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-video iframe {
+  align-items: center;
+  width: 640px;
+  height: 480px;
+}
+
+.grid-container {
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trombone-prices {
+  width: 50vw;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 10px;  
+}
+
+.trombone-item {
+  border: 1px solid black;
+  max-width: 400px;
+  max-height: 400px;
+  text-align: center;
+}
+
+.trombone-item header {
+  padding: 15px 0 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #dbd7d2;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+
+footer {
+  background: #ddd;
+  padding: 20px;
+  font-size: 0.8rem;
+}
+
+footer > ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+footer > ul > li {
+  padding: 0 10 px;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  color: #444;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
